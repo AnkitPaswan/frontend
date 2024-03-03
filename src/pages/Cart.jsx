@@ -4,10 +4,9 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 import "./Cart.scss";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { incrementQuantity, decrementQuantity, removeItem } from "../redux/cartRedux";
-import { useDispatch } from 'react-redux';
 import { loadStripe } from '@stripe/stripe-js';
 
 
